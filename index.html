@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>My Personal Website</title>
-<style>
+    <style>
         body {
             font-family: sans-serif;
             text-align: center;
@@ -23,28 +23,85 @@
             text-decoration: none;
             color: black;
         }
-p {
-            font-size: 1.2em;
-            line-height: 1.5em;
-            color: #333;
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a placeholder for my personal website.</p>
-<nav>
+    <header>
+        <h1>Welcome to my website!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <img src="avatar.jpg" alt="Your Avatar" width="100">
+        <p>Hi, I am Andy, a web developer. Welcome to my personal website!</p>
+        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p><a href="https://linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a></p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>More detailed personal background introduction here. Education and work experience can be listed here.</p>
+        <h3>Skills</h3>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>Programming Languages: Python, JavaScript, HTML, CSS</li>
+            <li>Tools: Git, Docker, AWS</li>
         </ul>
-    </nav>
-<div id="projects">
-        <h2>Projects</h2>
-        <p><b>NVDA Stock Analysis Today:</b> According to recent analysis, NVDA stock is expected to be volatile today due to market fluctuations. Investors are advised to monitor the stock closely and consider consulting with a financial advisor before making any decisions. This is just a placeholder and not real financial advice.</p>
-    </div>
-<p>Hi, I am Andy, a web developer.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <h3>Project 1: Project Name</h3>
+            <p>Brief project description.</p>
+            <img src="project1.png" alt="Project 1 Screenshot" width="200">
+            <p>Tech Stack: HTML, CSS, JavaScript</p>
+            <p><a href="https://github.com/your-github/project1">GitHub Repo</a> | <a href="https://your-demo-link/project1">Demo</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Project Name</h3>
+            <p>Brief project description.</p>
+            <img src="project2.png" alt="Project 2 Screenshot" width="200">
+            <p>Tech Stack: Python, Flask, HTML, CSS</p>
+            <p><a href="https://github.com/your-github/project2">GitHub Repo</a> | <a href="https://your-demo-link/project2">Demo</a></p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3><a href="blog-post-1.html">Blog Post Title 1</a></h3>
+            <p>Short excerpt of blog post 1...</p>
+        </div>
+        <div class="blog-post">
+            <h3><a href="blog-post-2.html">Blog Post Title 2</a></h3>
+            <p>Short excerpt of blog post 2...</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to contact me!</p>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-linkedin">LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/your-github">GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Andy Ng</p>
+    </footer>
 </body>
 </html>
